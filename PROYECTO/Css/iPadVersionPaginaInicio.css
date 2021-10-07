@@ -1,0 +1,237 @@
+/*VERSION IPAD*/
+@media screen and (max-width: 768px) {
+    
+    img{
+        
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        margin-left: 40%;
+        max-width: 768px;
+        border-radius: 100px;}
+    
+    header{
+        background-image: url("../Imagenes/food-pizza-wallpaper-preview.jpg");
+        background-position: center;
+        background-size: cover;}
+        
+    
+    .encabezado{
+        background-color: brown;
+        height: 40px;
+        width: 768px;}
+    
+    .encabezado ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        border-radius: 10px;
+        max-width:768px;}
+    
+    li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        padding: 10px;   
+        max-width: 600px;
+        position: relative;
+        display: block;}
+    
+    a:hover{
+        background-color:darkred;
+        border-radius: 10px;}
+    
+    a:focus{
+        background-color: darkred;
+        color: white;}
+    
+    .encabezado ul li ul{
+        display: flex;
+        flex-direction: column;
+        display: block;
+        border-radius: 10px;}
+    
+    .encabezado ul li ul{
+        position: absolute;
+        background-color:black;
+        display: none;
+        justify-content: center;}
+    
+    .encabezado ul li:hover > ul{
+        display: block;
+        width: 150px;}
+    
+    .encabezado ul li ul li{
+        position: relative;
+        border-radius: 10px;}
+    
+    .encabezado ul li:focus > ul{
+        background-color: darkred;}
+    
+    
+    form{
+       margin-top: 50px;
+       font-size: 15px;}
+    
+    input.nombre{ 
+        margin-left: 5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 500px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+    
+    input.direccion{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 400px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+
+    input.numero{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 100px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+    
+    input.telefono{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 200px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+    
+    input.adicional{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 500px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+
+    input{
+        border-radius: 10px;}
+
+    .cantidad{
+        width: 40px;}
+
+    .importe{
+        width: 70px;}
+
+    div.subtotal{
+        display: block;
+        margin-left: 450px ;
+        margin-top: 15px;
+        font-weight: bold;
+        margin-top: 100px;}
+    
+    div.descuento{
+        display: block;
+        margin-left: 392px;
+        margin-top: 15px;
+        font-weight: bold;}
+    
+    div.importeFinal{
+        display: block;
+        margin-left: 420px;
+        margin-top: 15px;
+        font-weight: bold;}
+    
+    div.detalle{
+        display: block;
+        padding: 5px;
+        margin-top: 15px;}
+
+    button.confirmarPedido{
+        display: block;
+        margin-top: 35px;
+        margin-left: 400px;
+        border-bottom: black;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: darkred;
+        width: 200px;}
+    
+    button.botonReporte{
+        display: block;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        background-color: black;
+        height: 25px;
+        font-family: italic;}
+    
+    button.botonreporte:active{
+        background-color: gray;}
+    
+    button.compras{
+        display: block;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        background-color: black;
+        height: 25px;
+        font-family:italic;}
+    
+    button.compras:active{
+        background-color: gray;}  
+    
+    #nuevaPestaña{
+        text-decoration: none;
+        border-bottom: black;
+        border-radius: 10px;
+        font-size: 15px;
+        color:white;
+        display: block;
+        background-color:black;}
+    
+    #confirmarImprimir{
+        text-decoration: none;
+        color: white;}
+
+    button.masFilas{
+            margin-top: -40px;
+            margin-left: 600px;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            background-color: white;}
+
+    div#check{
+            margin-top: 20px;
+            margin-left: 350px;}
+    }   

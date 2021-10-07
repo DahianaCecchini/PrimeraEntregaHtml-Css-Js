@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio caja/gastos</title>
+    <link rel="stylesheet" href="../Css/VersionPCdeCajaGastos.css">
+    <title>Inicio de caja / Gastos </title>
+    <style> *{
+            margin: 20px;
+            padding: 0;
+        }       
+     /*VERSION 600px y iPad*/
+     @media screen  and (max-width: 768px) {
+        img{
+             height: 150px;
+             width: 150px;
+             display: block;
+             margin:auto;
+             border-radius: 120px;}
+        header{
+            background-color: white;
+            width: 200%;
+            border-radius: 200px;}
+     
+        body{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          background-color: lightgray;}
+
+        h1{
+            max-width: 300px;
+            display: grid;
+            columns: 1fr 1fr;
+            font-size: 25px;
+            text-shadow: 2px 2px 2px darkred;
+            border-radius: 10px;
+            text-align: center;
+            color: white;}
+
+        .InicioCaja{
+            grid-column: 1;
+            align-content: center;}
+
+        .Compras{
+            grid-column: 2;
+            float: left;
+            grid-row-start: none;}
+
+        input{
+            border-radius: 5px;}
+
+        svg{
+            height: 10px;
+            width: 10px;}
+
+        button.Cargar{
+            padding: 10px;
+            width: 150px;
+            height: 60px;
+            grid-column: 1;
+            background-color: gray;
+            color: white;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0 5px #2b2928;}
+
+        button.Guardar{
+            padding: 10px;
+            width: 150px;
+            height: 60px;
+            grid-column: 2;
+            background-color: gray;
+            color: white;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0 5px #2b2928;}    
+        }
+    </style>
+</head>
+
+<header>
+    <img src="../Imagenes/Logo maxi pizzas.jpg" alt="Logo">
+</header>
+<body>
+    <form class="InicioCaja"><H1>INICIO DE CAJA</H1>
+        <input class="fechacaja" type="date" placeholder="FECHA">
+        <input class="repartidor1" type="number" placeholder="Rep 1">
+        <input class="repartidor2" type="number" placeholder="Rep 2">
+        <input class="repartidor3" type="number" placeholder="Rep 3">
+        <input class="mostrador" type="number" placeholder="Mostrador">
+    </form>
+    <button class="Cargar">CARGAR
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+            <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+            </svg>
+    </button>
+
+    <form class="Compras"><h1>COMPRAS/GASTOS</h1>
+        <input class="FECHA" type="date" placeholder="FECHA">
+        <input class="PRODUCTO" type="text" placeholder="PRODUCTO">
+        <input class="PROVEEDOR" type="text" placeholder="PROVEEDOR"> 
+        <input class="CANIDAD" type="number" placeholder="CANTIDAD">
+        <input class="PRECIO" type="number" placeholder="PRECIO POR UNIDAD/LTS/KGS">
+        <input class="ADICIONAL" type="text" placeholder="INFO ADICIONAL">
+    </form>
+    <button class="Guardar"> GUARDAR
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg></button>
+</body>
+</html>

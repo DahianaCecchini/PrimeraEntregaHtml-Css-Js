@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PROYECTO/Css/iPadVersionPaginaInicio.css">
+    <link rel="stylesheet" href="../PROYECTO/Css/PaginaInicioPC.css">
+    <title>Sistema de pedidos</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;}
+
+        /*version 7 pulgadas*/   
+ @media (max-width:600px) { 
+        img{
+            height: 10rem;
+            width: 10rem;
+            display: flex;
+            margin-left: 40%;
+            border-radius: 100px;}
+            
+        head{
+            width: 600px;}
+        
+        header{
+            background-image: url("../PROYECTO/Imagenes/food-pizza-wallpaper-preview.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 600px;}
+            
+        nav.encabezado{
+            background-color: darkred;
+            height: 40px;
+            width: 600px;
+            display: flex;
+            align-items: center;}
+       
+        nav.encabezado > ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            max-width: 600px;}
+
+        li {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            display: block;
+            max-width: 600px;}
+        
+        li>a:focus{
+            background-color: white;
+            color: black;
+            border-radius: 10px;}
+        
+      
+        .encabezado ul li ul{
+            display: flex;
+            flex-direction: column;
+            display: block; 
+            position: absolute;
+            background-color:darkred;
+            display: none;
+            justify-content: center;
+            border-radius: 10px;}
+    
+        
+        .encabezado ul li:hover > ul{
+            display: block;
+            width: 130px;}
+        
+        .encabezado ul li ul li{
+            position: relative;}
+        
+        .encabezado ul li:focus > ul{
+            background-color: darkred;}
+        
+        form{
+           margin-top: 50px;
+           font-size: 10px;}
+        
+        input.nombre{ 
+            margin-left: 5px;
+            display: block;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 500px;
+            background-color: darkred;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;}
+        
+        input.direccion{
+            margin-top: 5px;
+            margin-left: 5px;
+            display: block;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 150px;
+            background-color: darkred;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;}
+        
+        input.numero{
+            margin-top: 5px;
+            margin-left: 5px;
+            display: block;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 100px;
+            background-color: darkred;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;}
+        
+        input.telefono{
+            margin-top: 5px;
+            margin-left: 5px;
+            display: block;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 300px;
+            background-color: darkred;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;}
+        
+        input.adicional{
+            margin-top: 5px;
+            margin-left: 5px;
+            display: block;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 500px;
+            background-color: darkred;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;}
+
+        input{
+            border-radius: 10px;}
+            
+        div.subtotal{
+            display: block;
+            margin-top: 15px;
+            margin-left: 105px;
+            font-weight: bold;}
+        
+        div.descuento{
+            display: block;
+            margin-left: 60px;
+            margin-top: 15px;
+            font-weight: bold;}
+        
+        div.importeFinal{
+            display: block;
+            margin-left: 80px;
+            margin-top: 15px;
+            font-weight: bold;}
+        
+        .cantidad{
+            width: 30px;}
+
+        .importe{
+            width: 65px;}
+
+        div.detalle{
+            display: block;
+            padding: 5px;
+            margin-top: 15px;}
+        
+        button.confirmarPedido{
+            display: block;
+            margin-top: 35px;
+            margin-left: 350px;
+            border-bottom: black;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: darkred;
+            width: 200px;}
+
+        button.confirmarPedido:active{
+            background-color: gray;}
+
+        button.botonReporte{
+            display: block;
+            border-radius: 10px;
+            font-size: 10px;
+            color: white;
+            background-color: black;
+            font-family: italic;}
+        
+        button.botonReporte:active{
+            background-color: gray;}
+        
+        button.compras{
+            display: block;
+            border-radius: 10px;
+            align-items: center;
+            font-size: 10px;
+            color: white;
+            background-color: black;
+            font-family:italic;}
+        
+        button.compras:active{
+            background-color: gray;}  
+        
+        #nuevaPestaña{
+            text-decoration: none;
+            border-bottom: black;
+            border-radius: 10px;
+            font-size: 10px;
+            color:white;
+            display: block;
+            background-color:black;}
+        
+        #confirmarImprimir{
+            text-decoration: none;
+            color: white;}
+        
+        button.masFilas{
+            margin-left: 500px;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            background-color: white;}
+        }    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../PROYECTO/Imagenes/Logo maxi pizzas.jpg" alt="Logomaxipizzas">
+        <nav class="encabezado">
+            <button class="botonReporte" onclick= redirect(1)>REPORTE</button>
+            <ul>
+                <li><a href="#">PIZZAS</a>
+                    <ul id="pizzas"></ul>
+                </li>
+                <li><a href="#">PIZZAS CHICAS</a>
+                    <ul id="pizzasChicas"></ul>
+                </li>
+                <li><a href="#">EMPANADAS</a>
+                    <ul id="empanadas"></ul>
+                </li>
+                <li><a href="#">PAPAS</a>
+                    <ul id="papas"></ul>
+                </li>
+                <li><a href="#">BEBIDAS</a>
+                    <ul id="bebidas"></ul>
+                </li>
+                <li><a href="#">EXTRAS</a>
+                    <ul id="extras"></ul>
+                </li> 
+            </ul>
+            <button class="compras" onclick="redirect(2)">INICIO/
+                    GASTOS</button>
+        </nav>
+    </header>
+<div id="formulario">        
+    <form>
+        <input class="nombre" type="text" id="name" placeholder="NOMBRE/IDENTIFICADOR">
+        <span id="identificador"></span>
+        <input class="direccion" type="text" id="domicilio" placeholder="DIRECCION"> 
+        <span id="direccion"></span>
+        <input class="numero" type="number" id="number" placeholder="N°" minlength="1" maxlength="4">
+        <span id="n"></span> 
+        <input class="telefono" id="celular" type="text" placeholder="CELULAR">
+        <span id="celular2"></span>
+        <input class="adicional" type="text" id="info" placeholder="INFO ADICIONAL">
+        <span id="info2"></span><br>
+
+    <div id="filaDetalle">
+        <div class="detalle">
+        PRODUCTO
+        <input type="text" value="">
+        CANTIDAD
+        <input class="cantidad" type="number" id="number2" min="0.5" onkeypress="comprueba(this)" value="">
+        IMPORTE
+        <input class="importe" type="text" value="">
+        </div>
+    </div>
+    <button class="masFilas" onclick="agregarLinea()" type="button"  value="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg> 
+    </button>
+
+    <div class="subtotal"> SUBTOTAL
+        <input type="text" id="sbt" disabled ></div>
+    <div class="descuento"> DESCUENTO/AJUSTE
+        <input type="text" id="desc"></div>
+    <div class="importeFinal"> IMPORTE FINAL
+        <input type="text"></div>
+
+<div id="check">
+    <input type="checkbox"  id="miElementoCheckbox"> ROMINA
+    <br><input type="checkbox"  id="miElementoCheckbox2"> JUAN
+        <div id="msg"></div>
+        <div id="msg2"></div>
+</div>
+
+            <button class="confirmarPedido" onclick="redirect(3)">CONFIRMAR IMPRIMIR </button>  
+    </form>
+</div>
+<script src="../PROYECTO/Js/validacioncamposcontacto.js"></script>
+<script src="../PROYECTO/Js/checks.js"></script>
+<script src="../PROYECTO/Js/redireccionarBotones.js"></script>
+<script src="../PROYECTO/Js/categorias.js"></script>
+<script src="../PROYECTO/Js/agregarLinea.js"></script>
+<script>
+
+    /*let products = [new Product(1, 'MUZZA'),
+new Product(2, 'SIMPLES'),
+new Product(3, 'GOURMET'),
+new Product(4, 'SUPERGUSTOS'),
+new Product(5, 'MUZZA'),
+new Product(6, 'SIMPLE'),
+new Product(7, 'GOURMET'),
+new Product(8, 'SUPERGUSTOS'),
+new Product(9, 'Empanada CARNE', 'jjj'),
+new Product(10, 'Empanada JYQ', 'kkkk'),
+new Product(11, 'Empanada QyA'),
+new Product(12, 'Empanada QyC'),
+new Product(13, 'Empanada Capresse'),
+new Product(14, 'Empanada Verdura'),
+new Product(15, 'PAPAS GRANDES'),
+new Product(16, 'PAPAS PEQUEÑAS'),
+new Product(17, 'PAPAS CHEDDAR'),
+new Product(18, 'GRAMAJO'),
+new Product(19, 'COCA COLA'),
+new Product(20, 'LATA'),
+new Product(21, 'LITRO'),
+new Product(22, 'STELLA'),
+new Product(23, 'ALIOLI'),
+new Product(24, 'CHEDDAR'),
+new Product(25, 'GUSTO EXTRA'),
+new Product(26, 'MAS'),
+    ]*/
+</script>
+</body>
+</html>
+

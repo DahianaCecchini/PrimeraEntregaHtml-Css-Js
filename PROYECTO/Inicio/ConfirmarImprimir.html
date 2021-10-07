@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir</title>
+</head>
+<style>
+h1{
+    background-color: darkred;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;}
+
+.Formulario{
+    text-align: center;}
+
+input.nombre{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 30px;}
+
+input.direccion{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 30px;}
+
+input.N{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;}
+
+
+input.telefono{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 30px;}
+
+input.adicional{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 30px;}
+
+.detallePedido{
+    margin-top: 100px;
+    text-align: center;
+    }
+
+.importes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    display: grid;
+    columns: 1;}
+
+.cantidad{
+    width: 30px;}
+.importe{
+    width: 60px;}
+h3{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;}
+
+</style>
+<body>
+
+    <form>
+TICKET PARA IMPRIMIR
+<h1>DETALLE PEDIDO</h1>
+<div class="Formulario">
+        <input class="nombre" type="text" placeholder="NOMBRE/IDENTIFICADOR">
+        <input class="direccion" type="text" placeholder="DIRECCION">
+        <input class="N" type="number" placeholder="N°"> 
+         <input class="telefono" type="text" placeholder="TELEFONO">
+         <input class="adicional" type="text" placeholder="INFO ADICIONAL"></div>
+
+ <div class="detallePedido">
+         <div class="detalle">
+         PRODUCTO
+         <input type="text">
+         CANTIDAD
+         <input class="cantidad" type="number">
+         IMPORTE
+         <input class="importe" type="text"></div><br>
+         <div class="detalle2">
+         PRODUCTO
+         <input type="text">
+         CANTIDAD
+         <input class="cantidad" type="number">
+         IMPORTE
+         <input class="importe" type="text"></div><br>
+         <div class="detalle3">
+         PRODUCTO
+         <input type="text">
+         CANTIDAD
+         <input class="cantidad" type="number">
+         IMPORTE
+         <input class="importe" type="text"></div><br>
+         <div class="detalle4">
+         PRODUCTO
+         <input type="text">
+         CANTIDAD
+         <input class="cantidad" type="number">
+         IMPORTE
+         <input class="importe" type="text"></div><br>
+         <div class="detalle5">
+         PRODUCTO
+        <input type="text">
+         CANTIDAD
+         <input class="cantidad" type="number">
+         IMPORTE
+         <input class="importe" type="text"></div></div>
+ <div class="importes">
+         <div class="subtotal"> SUBTOTAL
+         <input type="text"></div>
+         <div class="descuento"> DESCUENTO/AJUSTE
+         <input type="text"></div>
+         <div class="importefinal"> IMPORTE FINAL
+         <input type="text"></div></div>
+      </form>
+
+<h3>GRACIAS POR ELEGIRNOS!</h3>
+</body>
+</html>

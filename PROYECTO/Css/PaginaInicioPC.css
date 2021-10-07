@@ -1,0 +1,247 @@
+
+ /*ADAPTADO A PC*/
+@media screen and (min-width: 1000px){
+ 
+
+    header{
+        background-image: url("../Imagenes/food-pizza-wallpaper-preview.jpg");
+        background-size: cover;}
+    
+    header img{
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 100px;}
+    
+    img:hover{
+        transform:rotate(360deg);
+        transition: width 1s, height 1s, transform 1s;
+        width: 20rem;
+        height: 20rem;}
+    
+    .encabezado{
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        height: 50px;}
+    
+    .encabezado ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;}
+    
+    li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        padding: 15px;
+        display: block;
+        border-radius: 10px;}
+    
+    a:hover{
+        background-color:darkred;
+        border-radius: 10px;}
+    
+    .encabezado ul li ul{
+        display: flex;
+        flex-direction: column;}
+    
+    .encabezado ul li ul{
+        position: absolute;
+        background-color:black;
+        display: none;}
+    
+    .encabezado ul li:hover > ul{
+        display: block;}
+    
+    .encabezado ul li ul li{
+        position: relative;
+        width: 150px;}
+    
+    form{
+        margin-top: 30px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+    
+    button.botonReporte{
+        display: block;
+        margin-right: 30px;
+        border-bottom: black;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        background-color: gray;
+        width: 120px;
+        box-shadow: 0 0 30px 30px black
+        inset, 0 0 0 0 white; -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+        height: 30px;
+        margin-top: 10px;}
+    
+    button.compras{
+        display: block;
+        margin-left: 30px;
+        border-bottom: black;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        background-color: gray;
+        width: 170px;
+        box-shadow: 0 0 30px 30px black
+        inset, 0 0 0 0 white; -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+        height: 30px;
+        margin-top: 10px;}
+    
+    #nuevaPestaña{
+        text-decoration: none;
+        border-bottom: black;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        display: block;
+        background-color:black;}
+    
+    #nuevaPestaña:hover{
+        background-color: gray;}
+    
+    input.nombre{
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 500px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+    
+    input.direccion{
+        margin-top: 5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 200px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+
+    input.numero{
+        margin-top: 5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 100px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+    
+    input.telefono{
+        margin-top: 5px;
+        margin-left:  5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 300px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+    
+    input.adicional{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 500px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;}
+    
+    input{
+        border-radius: 10px;
+        height: 20px;}
+
+    .cantidad{
+        width: 60px;}
+        
+    .importe{
+         width: 90px;}
+
+    div.subtotal{
+        display: block;
+        margin-left: 450px ;
+        margin-top: 15px;
+        font-weight: bold;}
+    
+    div.descuento{
+        display: block;
+        margin-left: 392px;
+        margin-top: 15px;
+        font-weight: bold;}
+    
+    div.importeFinal{
+        display: block;
+        margin-left: 420px;
+        margin-top: 15px;
+        font-weight: bold;}
+    
+    div.detalle{
+        display: block;
+        padding: 5px;
+        margin-top: 15px;}
+    
+    button.confirmarPedido{
+        display: block;
+        margin-top: 35px;
+        margin-left: 800px;
+        border-bottom: black;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        width: 200px;
+        box-shadow: 0 0 40px 40px darkred
+        inset, 0 0 0 0 white; -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;}
+    
+    button:hover{
+        box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;
+        cursor: pointer;}
+    
+    #confirmarImprimir{
+        text-decoration: none;
+        color: white;}
+
+    #confirmarImprimir:hover{
+        background-color: black;
+        border-radius: 10px;
+        font-size: 25px;}
+        
+    button.masFilas{
+        margin-left: 900px;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background-color: white;}
+    
+    div#check{
+       margin-top: 20px;
+       padding: 10px;}
+}
+        
